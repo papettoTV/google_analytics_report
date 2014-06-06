@@ -86,7 +86,7 @@ class Google_Analytics_Report_Core{
 		$this->client->setRedirectUri(GAR_API_REDIRECT_URI);
 		$this->client->setScopes(array('https://www.googleapis.com/auth/analytics'));
 		
-		if (isset($_SESSION['google_analytics_report_token'])) {
+		if (isset($_SESSION['google_analytics_report_token']) && $_SESSION['google_analytics_report_token'] != "") {
 			$this->client->setAccessToken($_SESSION['google_analytics_report_token']);
 		}else{
 			$authUrl = $this->client->createAuthUrl();
@@ -95,6 +95,16 @@ class Google_Analytics_Report_Core{
 			exit;
 		}
 		
+		if($this->client->isAccessTokenExpired()) {
+			//    echo 'Access Token Expired'; // Debug
+
+
+			$authUrl = $this->client->createAuthUrl();
+
+			print "<a class='login' href='$authUrl'>login google account</a>";
+			exit;
+		}
+
 		$this->analytics = new Google_Service_Analytics($this->client);
 	}
 
