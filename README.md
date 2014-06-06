@@ -9,9 +9,11 @@ Installation
 
  * Get Google Service Api Key [(here)](https://console.developers.google.com/project)
  * ``git clone git://github.com/papettoTV/google_analytics_report``
- * Write config.php your api key etc
- * See http://yourhost/google_analytics_report/
- * Auth google account
+ * ``git submodule init``
+ * ``git submodule update;``
+ * Write your Google Analytics api key etc on config.php 
+ * Open http://yourhost/google_analytics_report/
+ * Auth your google account
  
  You can get sample report .
  
