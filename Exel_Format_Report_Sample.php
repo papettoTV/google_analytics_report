@@ -14,7 +14,7 @@ class Exel_Format_Report{
 
 	function __construct(){
 
-		$file="gar_sample.xls";
+		$file="gar_sample_report.xls";
 		$exel_type ="Excel5";
 
 		$this->exel_type = $exel_type;
