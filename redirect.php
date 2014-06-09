@@ -17,7 +17,7 @@ if (isset($_GET['code'])) {
 
 	$_SESSION['google_analytics_report_token']=$client->authenticate($_GET['code']);
 
-	$redirect = $root_dir."/accounts.php";
+	$redirect = $root_dir."/accounts_list.php";
 	header('Location: ' . filter_var($redirect, FILTER_SANITIZE_URL));
 	exit;
 
@@ -25,7 +25,7 @@ if (isset($_GET['code'])) {
 
 	// logout
 	unset($_SESSION['google_analytics_report_token']);
-	$redirect = $root_dir."/accounts.php";
+	$redirect = $root_dir."/accounts_list.php";
 	header('Location: ' . filter_var($redirect, FILTER_SANITIZE_URL));
 	exit;
 }
