@@ -1,6 +1,6 @@
 [submodule "PHPExel"]
 	path = PHPExel
-	url = https://github.com/PHPOffice/PHPExcel
+	url = git://github.com/PHPOffice/PHPExcel
 [submodule "google-api-php-client"]
 	path = google-api-php-client
 	url = git://github.com/google/google-api-php-client
