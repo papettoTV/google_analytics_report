@@ -1,6 +1,6 @@
 <?php
 
-set_include_path(get_include_path(). PATH_SEPARATOR .$_SERVER["DOCUMENT_ROOT"] . 'ga-api/PHPExcel/Classes/');
+set_include_path(get_include_path(). PATH_SEPARATOR .dirname(__FILE__) . '/PHPExcel/Classes/');
 
 include_once 'PHPExcel.php';  
 include_once 'PHPExcel/IOFactory.php';
