@@ -19,6 +19,7 @@ Installation
  
  See Also
  -------
+
 [google analytics api を使いやすくしたgoogle_analytics_report 公開します（サンプルレポートダウンロード機能付き）](http://blog.playispeace.com/1030/wrap_google_analytics_api/) 
  
  
